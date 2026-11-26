@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 28px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F4F7;
+  font-family: "Times New Roman", Times, serif;
+  color: #222222;
+}
+
+/* Khung trang */
+.khung-km {
+  width: 860px;
+  max-width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Dải tiêu đề chính */
+.khung-km header {
+  background-color: #C8102E;
+  color: #FFFFFF;
+  padding: 14px;
+  text-align: center;
+}
+
+.khung-km header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Dải tiêu đề phụ */
+.dai-phu {
+  background-color: #FBE3E8;
+  color: #C8102E;
+  font-weight: 700;
+  padding: 7px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Bố cục 2 cột có vạch phân cách dọc */
+.noi-dung-2-cot {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 20px;
+  padding: 22px 24px;
+}
+
+.vach-ngan {
+  background-color: #E0E0E0;
+}
+
+/* Ảnh sản phẩm nổi góc phải cột 1 */
+.cot-trai::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.anh-sp {
+  float: right;
+  width: 150px;
+  max-width: 45%;
+  margin: 0 0 12px 14px;
+  border-radius: 4px;
+}
+
+/* Tiêu đề các mục */
+.tieu-de-muc {
+  color: #C8102E;
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.cot-trai .tieu-de-muc:not(:first-of-type) {
+  margin-top: 14px;
+}
+
+/* Danh sách nội dung */
+.noi-dung-2-cot ul {
+  margin: 0 0 12px;
+  padding-left: 20px;
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+.noi-dung-2-cot li {
+  margin-bottom: 6px;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 680px) {
+  .noi-dung-2-cot {
+    grid-template-columns: 1fr;
+  }
+  .vach-ngan {
+    height: 1px;
+    width: 100%;
+  }
+}
