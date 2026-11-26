@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 28px 16px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEF2F7;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Khung thẻ CV */
+.the-cv {
+  width: 860px;
+  max-width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Cột thông tin trái */
+.cot-trai {
+  background: linear-gradient(180deg, #1565C0, #0d3f7a);
+  color: #FFFFFF;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Avatar chữ tròn */
+.avatar {
+  width: 110px;
+  height: 110px;
+  background-color: #FFFFFF;
+  color: #1565C0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.ho-ten {
+  margin: 0 0 6px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.chuc-danh {
+  margin: 0 0 24px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.88);
+  text-align: center;
+}
+
+/* Danh sách thông tin liên hệ căn trái */
+.lien-he {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.lien-he li {
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+/* Cột nội dung phải */
+.cot-phai {
+  padding: 28px 32px;
+  background-color: #FFFFFF;
+}
+
+.muc-cv {
+  margin-bottom: 22px;
+}
+
+.muc-cv:last-child {
+  margin-bottom: 0;
+}
+
+/* Tiêu đề mục cột phải */
+.cot-phai h3 {
+  color: #1565C0;
+  font-size: 16px;
+  margin: 0 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e3ebf5;
+}
+
+.muc-cv p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Danh sách thẻ kỹ năng dạng viên thuốc */
+.ds-ky-nang {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ds-ky-nang li {
+  background-color: #E3EFFB;
+  color: #1565C0;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 999px;
+}
+
+/* Liên kết */
+.ds-lien-ket a {
+  color: #1565C0;
+  text-decoration: underline;
+}
+
+.ds-lien-ket a:hover {
+  color: #0d3f7a;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 700px) {
+  .the-cv {
+    grid-template-columns: 1fr;
+  }
+}
