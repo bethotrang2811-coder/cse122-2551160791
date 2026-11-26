@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 28px 16px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEF2F7;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1E293B;
+}
+
+/* Khung thẻ Form */
+.the-form {
+  width: 660px;
+  max-width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Đầu thẻ Form */
+.the-form header {
+  background-color: #0f766e;
+  color: #FFFFFF;
+  padding: 20px 26px;
+}
+
+.the-form header h1 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+.the-form header p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Phần thân biểu mẫu */
+.noi-dung-form {
+  padding: 24px 26px 26px;
+}
+
+/* Hàng 2 cột */
+.dong-2-cot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.nhom-nhap {
+  margin-bottom: 16px;
+}
+
+.nhom-nhap label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+.nhom-nhap input,
+.nhom-nhap select,
+.nhom-nhap textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #CBD5E1;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #1E293B;
+  background-color: #FFFFFF;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.nhom-nhap input:focus,
+.nhom-nhap select:focus,
+.nhom-nhap textarea:focus {
+  outline: none;
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+
+.nhom-nhap textarea {
+  resize: vertical;
+}
+
+/* Hàng hộp kiểm checkbox */
+.nhom-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0 20px;
+}
+
+.nhom-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #0f766e;
+  cursor: pointer;
+}
+
+.nhom-checkbox label {
+  font-size: 14px;
+  color: #334155;
+  cursor: pointer;
+}
+
+/* Hàng nút bấm */
+.nhom-nut {
+  display: flex;
+  gap: 12px;
+}
+
+.nhom-nut button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.nhom-nut button:hover {
+  opacity: 0.9;
+}
+
+.nut-gui {
+  background-color: #0f766e;
+  color: #FFFFFF;
+}
+
+.nut-nhap-lai {
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 600px) {
+  .dong-2-cot {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
